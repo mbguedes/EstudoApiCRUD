@@ -25,6 +25,7 @@ export const createUser = (req: Request, res: Response) => {
     res.status(201).json(newUser);
 }
 
+
 export const deleteUser = (req: Request, res: Response) => {
     const id = Number(req.params.id)
     const foundUser = users.findIndex(u => u.id === id)
